@@ -1,0 +1,8 @@
+function calculaJuroCompostos (capital, taxa,tempo){
+    let juro = capital * (taxa/100) * tempo;
+    let montante = capital * (1 + taxa/100) ** tempo;
+    return montante;
+}
+
+let conta1 = calculaJuroCompostos(5000, 4, 6);
+console.log("o montante é R$" + conta1);
